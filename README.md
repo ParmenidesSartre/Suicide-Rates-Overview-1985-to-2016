@@ -24,7 +24,7 @@ World Health Organization. (2018). Suicide prevention. Retrieved from  [http://w
 
 # Findings
 
- 1. Which generation has the highest number of suicide rates ?
+ ### Which generation has the highest number of suicide rates ?
 	 
 | Age  Group     | Suicide/100k  |
 |----------------|---------------|
@@ -36,3 +36,41 @@ World Health Organization. (2018). Suicide prevention. Retrieved from  [http://w
 | 5 - 14 years   |      0.62     |
 
 Conclusion : It seems that people commit suicide more when they are older.
+
+### Connection between GDP and suicide rate for all country in the data set.
+```python
+def create_df(country):
+    df = data[data['country'] == country].groupby('year').sum()
+    return df
+
+def calculate_corr(df):
+    return df['easy_gdp_cal'].corr(df['suicides/100k pop'])
+
+correlation = {}
+for country in data['country'].unique():
+    corr = calculate_corr(create_df(country))
+    correlation[country] = corr
+
+li = []
+for key,value in correlation.items():
+    if value < -0.3:
+        li.append(key)
+        
+        
+sad = []
+for key,value in correlation.items():
+    if value > 0.3:
+        sad.append(key)
+        
+print("""It seems that only {} % of the country shows a decrease in number of suicides due to improvement in living condition.There must be other reason such cultural, war (which should be explainable by low gdp) or various other factors.""".format(round(len(li)/data['country'].nunique() * 100),2))
+print()
+print("""It seems that only {} % of the country shows an increase in number of suicides due to improvement in living condition.There must be other reason such cultural, war (which should be explainable by low gdp) or various other factors.""".format(round(len(sad)/data['country'].nunique() * 100),2))
+print()
+print('27 % of countries is neutral')
+```
+Conclusion :
+It seems that only 56 % of the country shows a decrease in number of suicides due to improvement in living condition.There must be other reason such cultural, war (which should be explainable by low gdp) or various other factors.
+
+It seems that only 17 % of the country shows an increase in number of suicides due to improvement in living condition.There must be other reason such cultural, war (which should be explainable by low gdp) or various other factors.
+
+27 % of  the countries is neutral.
