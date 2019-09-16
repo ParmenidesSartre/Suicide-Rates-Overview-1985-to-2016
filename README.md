@@ -74,3 +74,7 @@ It seems that only 56 % of the country shows a decrease in number of suicides du
 It seems that only 17 % of the country shows an increase in number of suicides due to improvement in living condition.There must be other reason such cultural, war (which should be explainable by low gdp) or various other factors.
 
 27 % of  the countries is neutral.
+
+
+### Suicide rate among first world country through the years.
+![Suicide rate](https://github.com/ParmenidesSartre/Suicide-Rates-Overview-1985-to-2016/blob/master/Comparison%20of%20Suicide%20Rate%20among%20First%20World%20Country.png)
