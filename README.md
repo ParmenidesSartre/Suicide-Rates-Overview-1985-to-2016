@@ -1,5 +1,5 @@
-![Suicide is never worth it](https://www.standardmedia.co.ke/evemedia/eveimages/monday/mrsxszchsjcdcjizop5b962a4a840de.jpg)
 # Suicide Rates Overview 1985 to 2016
+![Suicide is never worth it](https://www.standardmedia.co.ke/evemedia/eveimages/monday/mrsxszchsjcdcjizop5b962a4a840de.jpg)
 
 Suicidal ideation is not something should be regarded as something that is normal. For some , it is a cry for help which should be answered. Suicide is devastating and the effects of suicide on family members and loved ones of the person who has died by suicide can be severe and far-reaching.
 
