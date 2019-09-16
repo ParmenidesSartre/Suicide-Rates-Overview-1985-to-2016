@@ -34,3 +34,5 @@ World Health Organization. (2018). Suicide prevention. Retrieved from  [http://w
 | 25 - 34  years |     12.19     |
 | 15 - 24 years  |      8.95     |
 | 5 - 14 years   |      0.62     |
+
+Conclusion : It seems that people commit suicide more when they are older.
